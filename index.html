@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media (max-width:1265px) {
+            nav {
+            }
+
+            nav ul {
+                margin-left: 10px
+            }
+
+            .n-btn {
+                margin-right: 40px;
+            }
+
+            nav img {
+                margin-left: 40px;
+            }
+
+        }
+
+        @media (max-width:1090px) {
+            nav {
+                font-size: 0.90rem;
+
+            }
+
+            nav ul li {
+                margin-left: 10px;
+            }
+
+            .n-btn {
+                margin-right: 40px;
+            }
+
+            .box {
+                height: 40vh;
+            }
+
+            .test-box {
+                height: 55vh;
+            }
+
+            .h-right img {}
+
+            .h-left {
+                margin-top: -5px;
+                margin-top: 50px;
+            }
+
+        }
+
+        @media (max-width:850px) {
+            nav {
+                height: 120px;
+
+
+            }
+
+            nav img {
+                display: none;
+            }
+
+            .hero-section {}
+
+            .h-left {
+                margin-left: -10px;
+            }
+
+            .h-left h1 {
+
+                font-size: 2rem;
+
+            }
+
+            .h-left p {
+                font-size: 1rem;
+            }
+
+            .hbtn {
+                padding: 10px;
+                font-size: 0.80rem;
+            }
+
+            .box {
+                height: 45vh;
+            }
+
+            .test-section {
+                height: 250vh;
+            }
+
+            .test-contaner {
+                flex-direction: column;
+
+            }
+
+            .test-box {
+                height: 50vh;
+                width: 40vw;
+                margin: auto;
+                margin-top: 30px;
+
+            }
+
+            .c-left h1 {
+                font-size: 1.20rem;
+
+            }
+
+            .c-left p {
+                font-size: 0.80rem;
+
+            }
+
+            .left {
+                margin-left: 20px;
+            }
+
+            .left p {
+                font-size: 0.90rem;
+            }
+
+            .right h1 {
+                font-size: 1.2rem;
+            }
+
+            .right p {
+                font-size: 1rem;
+
+            }
+
+
+        }
+
+        @media (max-width:730px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+
+            .n-btn {
+                margin-top: 5px;
+            }
+
+
+            .hero-section {
+                height: 110vh;
+            }
+
+            .h-contaner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .work-section {
+                height: 220vh;
+            }
+
+
+
+            .w-left {
+                flex-direction: column;
+                text-align: center;
+
+            }
+
+            .w-right {
+
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .box {
+                margin: auto;
+                margin-top: 20px;
+                border-radius: 10px;
+                width: 40vw;
+            }
+
+            .servic-section {
+                height: 140vh;
+            }
+
+            .servic-contaner {
+                flex-direction: column;
+
+            }
+
+            .servic-left {
+                text-align: center;
+            }
+
+            #servic-img {
+                width: 50vw;
+            }
+
+            .servic-right {
+                width: 40vw;
+            }
+
+            .s-r {
+                margin: auto;
+                margin-top: 20px;
+            }
+
+            .test-box {
+                height: 60vh;
+            }
+
+            textarea {
+                width: 50vw;
+            }
+
+            .c-w-us {
+                flex-direction: column;
+                margin: auto;
+            }
+
+            .c-left {
+                margin: auto;
+            }
+
+            .c-right {
+                margin: auto;
+            }
+
+            .c-right input {
+                width: 35vw;
+
+            }
+
+            .f-contaner {
+                flex-direction: column;
+                justify-content: none;
+
+            }
+
+            .h-left {
+                margin-top: 300px;
+            }
+
+            .h-right {
+                margin-top: 100px;
+            }
+        }
+
+        @media (max-width:400px) {
+         
+
+            nav ul {
+                font-size: 0.70rem;
+                margin-top: 20px;
+            }
+
+            .h-right {
+               margin-left: -150px;
+            }
+         
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="logo-removebg-preview.png" alt="nature">
+        </div>
+        <div>
+            <ul>
+                <li>home</li>
+                <li>about us</li>
+                <li>our services</li>
+                <li>how it work</li>
+                <li>contact</li>
+            </ul>
+        </div>
+        <div class="n-btn">
+            <button>log in</button>
+            <button>sign in</button>
+        </div>
+
+    </nav>
+    <div class="hero-section">
+        <div class="h-contaner">
+            <div class="h-left">
+                <h1>easy way health <br>consultation.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus placeat itaque <br>atque. Ea
+                    voluptate officiis tempora saepe ducimus.</p>
+                <div class="h-btn">
+                    <button id="hbtn">get started</button>
+                </div>
+            </div>
+            <div class="h-right">
+                <img src="Functional+Medicine+Doctor+Chicago-removebg-preview.png" alt="Nature">
+            </div>
+        </div>
+    </div>
+    <div class="work-section">
+        <h1 class="w-h1">How it Works</h1>
+        <div class="w-contaner">
+            <div class="w-left">
+                <div class="box">
+                    <i id="img" class="fa-solid fa-people-roof"></i>
+                    <h1>Share your needs</h1>
+                    <p>share your needs so we can talor and plan together</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <div class="box">
+                    <img src="handshek-removebg-preview.png" alt="nature">
+                    <h1>Post it</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vero?share your needs so we
+                        can talor and plan together</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+            <div class="w-right">
+                <div class="box">
+                    <img src="handshek-removebg-preview.png" alt="nature">
+                    <h1>Request and manage</h1>
+                    <p>share your needs so we can talor and plan together Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ea, eligendi?</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <div class="box">
+                    <img src="hartinhand-removebg-preview.png" alt="nature">
+                    <h1>long-hour care</h1>
+                    <p>share your needs so we can talor and plan together</p>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="servic-section">
+        <div class="servic-contaner">
+            <div class="servic-left">
+                <img id="servic-img" src="groupimg_dr-removebg-preview.png" alt="nature">
+            </div>
+            <div class="s-r">
+                <div class="servic-right">
+                    <h1>Our Services</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, quo.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing Sequi cupiditate, alias quos sint ad, hic
+                        suscipit repudiandae perspiciatisbr </p>
+                    <div class="h-btn">Lern More</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="test-section">
+        <h1 id="test-h1">Our Testimonials</h1>
+        <div class="test-contaner">
+            <div class="test-box">
+                <img src="" alt="nature">
+                <h1>Anonymous</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta impedit unde eos magnam et
+                    omnis voluptas dignissimos nostrum, illum nobis necessitatibus aut! Architecto voluptas voluptatum
+                    earum aut molestias ad.</p>
+                <h1>Read More</h1>
+            </div>
+            <div class="test-box">
+                <img src="" alt="nature">
+                <h1>Anonymous</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta impedit unde eos magnam et
+                    omnis voluptas dignissimos nostrum, illum nobis necessitatibus aut! Architecto voluptas voluptatum
+                    earum aut molestias ad.</p>
+                <h1>Read More</h1>
+
+            </div>
+            <div class="test-box">
+                <img src="" alt="nature">
+                <h1>Anonymous</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta impedit unde eos magnam et
+                    omnis voluptas dignissimos nostrum, illum nobis necessitatibus aut! Architecto voluptas voluptatum
+                    earum aut molestias ad.</p>
+                <h1>Read More</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <div class="contact-contaner">
+            <form action="" method="post" align="center">
+                <input required type="text" name="fname" placeholder="First Name">
+                <input required type="text" name="lname" placeholder="Last Name">
+                <br>
+                <input required type="email" name="email" placeholder="Your email">
+                <input required type="number" name="fnumber" placeholder="Phone number">
+                <br>
+                <textarea name="" id="" cols="70" rows="8" placeholder="Comments"></textarea>
+                <br>
+                <input id="s-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="c-w-us">
+        <div class="c-left">
+            <h1>Contact With Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corporis <br> lorem4 Lorem Lorem ipsum
+                dolor sit amet.ipsum dolor sit.
+            </p>
+        </div>
+        <div class="c-right">
+            <form action="">
+
+                <input required type="text" placeholder="Enter your email address">
+                <input id="c-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f-contaner">
+            <div class="left">
+                <img src="" alt="nature">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Perferendis ipsum aperiam est harum.
+                </p>
+                <div class="s-media">
+                    <img src="p1.png" alt="nature">
+                    <img src="p2.png" alt="nature">
+                    <img src="p3.png" alt="nature">
+                </div>
+            </div>
+            <div class="right">
+                <div class="company">
+                    <h1>company</h1>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                </div>
+                <div class="support">
+                    <h1>support</h1>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                </div>
+                <div class="services">
+                    <h1>Services</h1>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                    <p>about</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <marquee behavior="" direction="">
+                <p>copyright @2023 Lorem ipsum dolor sit.</p>
+            </marquee>
+
+        </div>
+    </div>
+</body>
+
+</html>
